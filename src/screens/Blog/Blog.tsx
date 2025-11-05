@@ -1,0 +1,312 @@
+import React from "react";
+import { Button } from "../../components/ui/button";
+import { LanguageSelector } from "../../components/LanguageSelector";
+
+export const Blog = (): JSX.Element => {
+  const [currentLanguage, setCurrentLanguage] = React.useState("fr");
+
+  const navigationItems = [
+    { label: "Home", href: "/" },
+    { label: "Services", href: "/services" },
+    { label: "Blog", href: "/blog" },
+    { label: "À propos", href: "/about" },
+    { label: "Tarifs", href: "/pricing" },
+  ];
+
+  const handleContactClick = () => {
+    window.location.href = "mailto:contact@ebservices.com?subject=Question sur l'article IA et traduction&body=Bonjour,%0D%0A%0D%0AJ'ai lu votre article sur l'IA et la traduction et j'aimerais en savoir plus.%0D%0A%0D%0ACordialement";
+  };
+
+  return (
+    <div className="bg-white w-full min-h-screen">
+      {/* Header Navigation */}
+      <header className="relative w-full bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-center">
+            <a href="/" className="block">
+              <div className="w-[142px] h-[136px] relative">
+                <div className="absolute w-[126px] h-[106px] top-0 left-0 bg-[#1090cb]" />
+                <img
+                  className="w-[142px] h-[136px] absolute top-0 left-0 object-cover"
+                  alt="Logo"
+                  src="/chatgpt-image-12-juin-2025--23-04-46-removebg-preview-1-1.png"
+                />
+              </div>
+            </a>
+          </div>
+
+          {/* Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            {navigationItems.map((item, index) => (
+              <a
+                key={index}
+                href={item.href}
+                className={`transition-colors duration-200 font-normal text-base ${
+                  item.active 
+                    ? "text-[#1090cb] font-medium" 
+                    : "text-black hover:text-[#1090cb]"
+                }`}
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
+
+          {/* Language Selector & Contact Button */}
+          <div className="flex items-center space-x-4">
+            <LanguageSelector 
+              currentLanguage={currentLanguage}
+              onLanguageChange={setCurrentLanguage}
+            />
+            <Button 
+              onClick={handleContactClick}
+              className="bg-[#1090cb] hover:bg-[#0e7ba8] text-white px-6 py-2 rounded-md text-sm font-normal"
+            >
+              Contactez-nous
+            </Button>
+          </div>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section className="relative w-full bg-gradient-to-br from-purple-50 to-blue-50 py-16 overflow-hidden">
+        <div className="absolute top-10 right-10 w-16 h-16 bg-purple-400 rounded-full opacity-70" />
+        <div className="absolute bottom-20 left-20 w-12 h-12 bg-orange-400 rounded-full opacity-60" />
+        
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h1 className="font-bold text-4xl lg:text-5xl text-gray-800 mb-6">
+            IA et <span className="text-[#1090cb]">Traduction</span>
+          </h1>
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            Une collaboration essentielle pour l'avenir de la traduction professionnelle
+          </p>
+          <div className="text-gray-500 text-sm">
+            Publié le 15 janvier 2025 • 8 min de lecture
+          </div>
+        </div>
+      </section>
+
+      {/* Article Content */}
+      <article className="w-full py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="prose prose-lg max-w-none">
+            <p className="text-xl text-gray-600 leading-relaxed mb-8">
+              La traduction est bien plus qu'un simple passage d'une langue à une autre : elle est le socle des échanges culturels et économiques. Longtemps réservée à des experts linguistiques, elle est aujourd'hui bouleversée par l'essor de l'intelligence artificielle (IA).
+            </p>
+
+            <p className="text-gray-700 leading-relaxed mb-6">
+              En quelques années seulement, les outils de traduction automatiques se sont imposés comme des alliés incontournables. Rapides, puissants et de plus en plus précis, ils modifient en profondeur la manière dont les traducteurs travaillent. Mais jusqu'où l'IA peut-elle aller ? Peut-elle vraiment remplacer l'humain ?
+            </p>
+
+            <p className="text-gray-700 leading-relaxed mb-8">
+              Dans cet article, nous explorons le rôle de l'IA dans la traduction, ses avantages, ses limites et l'avenir de la collaboration homme-machine.
+            </p>
+
+            <h2 className="font-bold text-2xl text-gray-800 mb-6 mt-12">
+              Le rôle de l'IA dans la traduction
+            </h2>
+
+            <p className="text-gray-700 leading-relaxed mb-6">
+              Les systèmes de traduction automatique basés sur l'IA analysent le texte source et le traduisent instantanément dans la langue cible. Grâce à des algorithmes avancés, ils conservent la syntaxe, la grammaire et le sens global du texte.
+            </p>
+
+            <div className="bg-green-50 border-l-4 border-green-400 p-6 mb-6">
+              <p className="text-green-800 font-medium">
+                ➡️ Leur principal atout ? La rapidité : un volume de contenu massif peut être traduit en quelques secondes.
+              </p>
+            </div>
+
+            <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 mb-8">
+              <p className="text-yellow-800 font-medium">
+                ⚠️ Mais l'IA n'est pas infaillible. Certaines erreurs, maladresses ou contresens apparaissent encore, rendant indispensable l'intervention d'un traducteur humain pour la révision et l'adaptation culturelle.
+              </p>
+            </div>
+
+            <h2 className="font-bold text-2xl text-gray-800 mb-6 mt-12">
+              IA et traducteurs : une collaboration incontournable
+            </h2>
+
+            <p className="text-gray-700 leading-relaxed mb-6">
+              Pour les professionnels de la traduction, l'IA n'est pas une menace mais un outil complémentaire. Le processus repose généralement sur deux étapes :
+            </p>
+
+            <ol className="list-decimal list-inside space-y-3 mb-6 text-gray-700">
+              <li className="leading-relaxed">Traduction automatique grâce à un outil d'IA.</li>
+              <li className="leading-relaxed">Révision humaine par un traducteur natif, qui affine le texte, corrige les incohérences et restitue la dimension culturelle et stylistique.</li>
+            </ol>
+
+            <div className="bg-blue-50 border-l-4 border-[#1090cb] p-6 mb-8">
+              <p className="text-blue-800 font-medium">
+                👉 Résultat : des traductions plus rapides, plus précises, mais toujours enrichies de la sensibilité humaine.
+              </p>
+            </div>
+
+            <h2 className="font-bold text-2xl text-gray-800 mb-6 mt-12">
+              Les avantages de la traduction avec l'IA
+            </h2>
+
+            <p className="text-gray-700 leading-relaxed mb-6">
+              L'intelligence artificielle transforme le métier de traducteur et les attentes des entreprises :
+            </p>
+
+            <ul className="list-disc list-inside space-y-3 mb-8 text-gray-700">
+              <li className="leading-relaxed">Un gain de temps considérable : traitement de gros volumes en quelques minutes.</li>
+              <li className="leading-relaxed">Des coûts réduits : moins de ressources humaines nécessaires qu'avec une traduction manuelle.</li>
+              <li className="leading-relaxed">Un atout pour les spécialisations (juridique, médical, technique, littéraire) grâce aux mémoires de traduction et aux bases terminologiques.</li>
+              <li className="leading-relaxed">Une productivité accrue pour les traducteurs, qui disposent d'outils performants pour rechercher, harmoniser et automatiser certaines tâches.</li>
+            </ul>
+
+            <h2 className="font-bold text-2xl text-gray-800 mb-6 mt-12">
+              Les limites de l'IA en traduction
+            </h2>
+
+            <p className="text-gray-700 leading-relaxed mb-6">
+              Malgré ses performances, l'IA reste confrontée à des défis majeurs :
+            </p>
+
+            <ul className="list-disc list-inside space-y-3 mb-6 text-gray-700">
+              <li className="leading-relaxed">Contexte mal interprété : certaines phrases perdent leur subtilité.</li>
+              <li className="leading-relaxed">Nuances culturelles mal traduites : proverbes, jeux de mots, idiomatismes échappent aux algorithmes.</li>
+              <li className="leading-relaxed">Manque de fluidité : les textes peuvent paraître mécaniques ou artificiels.</li>
+            </ul>
+
+            <p className="text-gray-700 leading-relaxed mb-8">
+              En somme, l'IA ne peut pas encore reproduire la créativité, la sensibilité et l'intuition humaines.
+            </p>
+
+            <h2 className="font-bold text-2xl text-gray-800 mb-6 mt-12">
+              L'avenir : une alliance entre technologie et expertise humaine
+            </h2>
+
+            <p className="text-gray-700 leading-relaxed mb-6">
+              Plutôt que d'opposer l'IA et les traducteurs, il faut penser en termes de collaboration.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-purple-50 p-6 rounded-lg">
+                <h3 className="font-semibold text-lg text-purple-800 mb-3">L'IA</h3>
+                <p className="text-purple-700">Automatise et accélère</p>
+              </div>
+              <div className="bg-green-50 p-6 rounded-lg">
+                <h3 className="font-semibold text-lg text-green-800 mb-3">L'humain</h3>
+                <p className="text-green-700">Nuance et contextualise</p>
+              </div>
+            </div>
+
+            <p className="text-gray-700 leading-relaxed mb-6">
+              Cette complémentarité ouvre la voie à une nouvelle ère : des traductions plus rapides, précises et adaptées aux besoins spécifiques des clients.
+            </p>
+
+            <p className="text-gray-700 leading-relaxed mb-6">
+              Les traducteurs de demain devront s'adapter en :
+            </p>
+
+            <ul className="list-none space-y-3 mb-8 text-gray-700">
+              <li className="leading-relaxed flex items-start">
+                <span className="text-green-500 mr-2">✅</span>
+                maîtrisant les outils technologiques,
+              </li>
+              <li className="leading-relaxed flex items-start">
+                <span className="text-green-500 mr-2">✅</span>
+                se spécialisant dans des niches à forte valeur ajoutée,
+              </li>
+              <li className="leading-relaxed flex items-start">
+                <span className="text-green-500 mr-2">✅</span>
+                et en continuant à offrir ce que l'IA ne peut pas remplacer : l\'empreinte culturelle et la touche humaine.
+              </li>
+            </ul>
+
+            <h2 className="font-bold text-2xl text-gray-800 mb-6 mt-12">
+              Conclusion
+            </h2>
+
+            <p className="text-gray-700 leading-relaxed mb-6">
+              L'intelligence artificielle ne remplace pas les traducteurs, elle transforme leur métier. Elle leur permet de gagner en efficacité tout en mettant en valeur ce qui les rend irremplaçables : leur sensibilité, leur culture et leur expertise.
+            </p>
+
+            <div className="bg-[#1090cb] text-white p-6 rounded-lg mb-8">
+              <p className="font-medium text-lg">
+                👉 En somme, l'avenir de la traduction repose sur une alliance stratégique entre l'innovation technologique et les compétences humaines.
+              </p>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="mt-12 p-8 bg-gray-50 rounded-2xl text-center">
+            <h3 className="font-bold text-2xl text-gray-800 mb-4">
+              Besoin d'une traduction professionnelle ?
+            </h3>
+            <p className="text-gray-600 mb-6">
+              Découvrez comment nous combinons IA et expertise humaine pour vos projets de traduction.
+            </p>
+            <Button 
+              onClick={handleContactClick}
+              className="bg-[#1090cb] hover:bg-[#0e7ba8] text-white px-8 py-3 rounded-lg font-normal text-base"
+            >
+              Demander un devis
+            </Button>
+          </div>
+        </div>
+      </article>
+
+      {/* Footer */}
+      <footer className="w-full bg-[#e8f4fa] py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex justify-center mb-8">
+            <div className="w-32 h-32 relative">
+              <div className="absolute w-24 h-24 top-4 left-4 bg-[#1090cb]" />
+              <img
+                className="w-32 h-32 absolute top-0 left-0 object-cover"
+                alt="Logo"
+                src="/chatgpt-image-12-juin-2025--23-04-46-removebg-preview-1-1.png"
+              />
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <p className="text-gray-600 text-base leading-relaxed mb-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+              <p className="text-gray-600 text-base">@Lorem</p>
+            </div>
+
+            <div>
+              <h3 className="font-medium text-black text-lg mb-4">About us</h3>
+              <nav className="space-y-2">
+                {["Lorem", "Portfolio", "Careers", "Contact us"].map((link, index) => (
+                  <div key={index} className="text-gray-600 hover:text-[#1090cb] cursor-pointer transition-colors">
+                    {link}
+                  </div>
+                ))}
+              </nav>
+            </div>
+
+            <div>
+              <h3 className="font-medium text-black text-lg mb-4">Contact us</h3>
+              <p className="text-gray-600 text-base leading-relaxed mb-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+              <p className="text-gray-600 text-base">+908 89097 890</p>
+            </div>
+
+            <div className="flex justify-end">
+              <img
+                className="w-52 h-16 object-contain"
+                alt="Group"
+                src="/group-12.png"
+              />
+            </div>
+          </div>
+
+          <div className="border-t border-gray-300 pt-6 text-center">
+            <p className="text-gray-500 text-sm">
+              Copyright ® 2021 Lorem All rights Reserved
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};

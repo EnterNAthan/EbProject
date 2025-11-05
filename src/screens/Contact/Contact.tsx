@@ -1,0 +1,247 @@
+import React from "react";
+import { Button } from "../../components/ui/button";
+import { Card, CardContent } from "../../components/ui/card";
+import { LanguageSelector } from "../../components/LanguageSelector";
+
+export const Contact = (): JSX.Element => {
+  const [currentLanguage, setCurrentLanguage] = React.useState("fr");
+
+  const navigationItems = [
+    { label: "Home", href: "/" },
+    { label: "Services", href: "/services" },
+    { label: "Blog", href: "/blog" },
+    { label: "À propos", href: "/about" },
+    { label: "Tarifs", href: "/pricing" },
+  ];
+
+  const handleContactClick = () => {
+    window.location.href = "mailto:contact@ebservices.com?subject=Demande de contact général&body=Bonjour,%0D%0A%0D%0AJe souhaiterais vous contacter concernant vos services de traduction.%0D%0A%0D%0ACordialement";
+  };
+
+  return (
+    <div className="bg-white w-full min-h-screen">
+      {/* Header Navigation */}
+      <header className="relative w-full bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-center">
+            <a href="/" className="block">
+              <div className="w-[142px] h-[136px] relative">
+                <div className="absolute w-[126px] h-[106px] top-0 left-0 bg-[#1090cb]" />
+                <img
+                  className="w-[142px] h-[136px] absolute top-0 left-0 object-cover"
+                  alt="Logo"
+                  src="/chatgpt-image-12-juin-2025--23-04-46-removebg-preview-1-1.png"
+                />
+              </div>
+            </a>
+          </div>
+
+          {/* Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            {navigationItems.map((item, index) => (
+              <a
+                key={index}
+                href={item.href}
+                className={`transition-colors duration-200 font-normal text-base ${
+                  item.active 
+                    ? "text-[#1090cb] font-medium" 
+                    : "text-black hover:text-[#1090cb]"
+                }`}
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
+
+          {/* Language Selector & Contact Button */}
+          <div className="flex items-center space-x-4">
+            <LanguageSelector 
+              currentLanguage={currentLanguage}
+              onLanguageChange={setCurrentLanguage}
+            />
+            <Button 
+              onClick={handleContactClick}
+              className="bg-[#1090cb] hover:bg-[#0e7ba8] text-white px-6 py-2 rounded-md text-sm font-normal"
+            >
+              Contactez-nous
+            </Button>
+          </div>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section className="relative w-full bg-gradient-to-br from-blue-50 to-purple-50 py-24 overflow-hidden">
+        <div className="absolute top-10 right-10 w-16 h-16 bg-orange-400 rounded-full opacity-70" />
+        <div className="absolute bottom-20 left-20 w-12 h-12 bg-purple-400 rounded-full opacity-60" />
+        
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <div className="flex justify-center mb-8">
+            <div className="w-24 h-24 bg-yellow-100 rounded-full flex items-center justify-center">
+              <span className="text-4xl">👋</span>
+            </div>
+          </div>
+          
+          <h1 className="font-bold text-4xl lg:text-5xl text-gray-800 mb-6">
+            Let's <span className="text-[#1090cb]">Collaborate</span>
+          </h1>
+          
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            On vous attends en mail.
+          </p>
+          
+          <div className="space-y-6 text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto">
+            <p className="font-medium text-xl text-gray-800 mb-4">
+              Pourquoi privilégier l'email ?
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <div className="flex items-center mb-3">
+                  <span className="text-2xl mr-3">💬</span>
+                  <h3 className="font-semibold text-gray-800">Conversation naturelle</h3>
+                </div>
+                <p className="text-gray-600">
+                  L'email permet un échange fluide et détaillé pour mieux comprendre vos besoins spécifiques.
+                </p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <div className="flex items-center mb-3">
+                  <span className="text-2xl mr-3">📎</span>
+                  <h3 className="font-semibold text-gray-800">Partage de documents</h3>
+                </div>
+                <p className="text-gray-600">
+                  Envoyez directement vos fichiers à traduire pour une estimation précise et rapide.
+                </p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <div className="flex items-center mb-3">
+                  <span className="text-2xl mr-3">⏰</span>
+                  <h3 className="font-semibold text-gray-800">Réponse sous 24h</h3>
+                </div>
+                <p className="text-gray-600">
+                  Nous nous engageons à vous répondre rapidement avec un devis personnalisé.
+                </p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <div className="flex items-center mb-3">
+                  <span className="text-2xl mr-3">🔒</span>
+                  <h3 className="font-semibold text-gray-800">Confidentialité</h3>
+                </div>
+                <p className="text-gray-600">
+                  Vos échanges et documents restent privés et sécurisés tout au long du processus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Information */}
+      <section className="w-full py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+            <Card className="border border-gray-200 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">📧</span>
+                </div>
+                <h3 className="font-semibold text-xl text-gray-800 mb-3">Email</h3>
+                <p className="text-gray-600">contact@ebservices.com</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border border-gray-200 rounded-2xl hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">📱</span>
+                </div>
+                <h3 className="font-semibold text-xl text-gray-800 mb-3">Téléphone</h3>
+                <p className="text-gray-600">+94 4444 5555 6</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="w-full py-16 bg-[#e8f4fa]">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="font-bold text-3xl text-gray-800 mb-6">
+            Say <span className="text-[#1090cb]">hello</span>
+          </h2>
+          <p className="text-lg text-gray-600 mb-8">
+            On vous attends en mail.
+          </p>
+          
+          <Button 
+            onClick={handleContactClick}
+            className="bg-[#1090cb] hover:bg-[#0e7ba8] text-white px-12 py-4 rounded-lg font-normal text-lg"
+          >
+            Get in touch
+          </Button>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="w-full bg-[#e8f4fa] py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex justify-center mb-8">
+            <div className="w-32 h-32 relative">
+              <div className="absolute w-24 h-24 top-4 left-4 bg-[#1090cb]" />
+              <img
+                className="w-32 h-32 absolute top-0 left-0 object-cover"
+                alt="Logo"
+                src="/chatgpt-image-12-juin-2025--23-04-46-removebg-preview-1-1.png"
+              />
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <p className="text-gray-600 text-base leading-relaxed mb-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+              <p className="text-gray-600 text-base">@Lorem</p>
+            </div>
+
+            <div>
+              <h3 className="font-medium text-black text-lg mb-4">About us</h3>
+              <nav className="space-y-2">
+                {["Lorem", "Portfolio", "Careers", "Contact us"].map((link, index) => (
+                  <div key={index} className="text-gray-600 hover:text-[#1090cb] cursor-pointer transition-colors">
+                    {link}
+                  </div>
+                ))}
+              </nav>
+            </div>
+
+            <div>
+              <h3 className="font-medium text-black text-lg mb-4">Contact us</h3>
+              <p className="text-gray-600 text-base leading-relaxed mb-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+              <p className="text-gray-600 text-base">+908 89097 890</p>
+            </div>
+
+            <div className="flex justify-end">
+              <img
+                className="w-52 h-16 object-contain"
+                alt="Group"
+                src="/group-12.png"
+              />
+            </div>
+          </div>
+
+          <div className="border-t border-gray-300 pt-6 text-center">
+            <p className="text-gray-500 text-sm">
+              Copyright ® 2021 Lorem All rights Reserved
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};
