@@ -1,40 +1,33 @@
 import React from "react";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
-import { LanguageSelector } from "../../components/LanguageSelector";
+import { Layout } from "../../components/Layout";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 export const About = (): JSX.Element => {
-  const [currentLanguage, setCurrentLanguage] = React.useState("fr");
-
-  const navigationItems = [
-    { label: "Home", href: "/" },
-    { label: "Services", href: "/services" },
-    { label: "Blog", href: "/blog" },
-    { label: "À propos", href: "/about" },
-    { label: "Tarifs", href: "/pricing" },
-  ];
+  const { t } = useLanguage();
 
   const clientTypes = [
     {
-      title: "Grandes Entreprises",
+      titleKey: "aboutPage.clients.types.largeCompanies",
       icon: "🏢",
       bgColor: "bg-red-50",
       iconColor: "text-red-600"
     },
     {
-      title: "TPE/PME",
+      titleKey: "aboutPage.clients.types.sme",
       icon: "🏪",
       bgColor: "bg-blue-50",
       iconColor: "text-blue-600"
     },
     {
-      title: "Particuliers",
+      titleKey: "aboutPage.clients.types.individuals",
       icon: "👤",
       bgColor: "bg-purple-50",
       iconColor: "text-purple-600"
     },
     {
-      title: "Industrielles",
+      titleKey: "aboutPage.clients.types.industrial",
       icon: "⚙️",
       bgColor: "bg-pink-50",
       iconColor: "text-pink-600"
@@ -46,56 +39,7 @@ export const About = (): JSX.Element => {
   };
 
   return (
-    <div className="bg-white w-full min-h-screen">
-      {/* Header Navigation */}
-      <header className="relative w-full bg-white border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center">
-            <a href="/" className="block">
-              <div className="w-[142px] h-[136px] relative">
-                <div className="absolute w-[126px] h-[106px] top-0 left-0 bg-[#1090cb]" />
-                <img
-                  className="w-[142px] h-[136px] absolute top-0 left-0 object-cover"
-                  alt="Logo"
-                  src="/chatgpt-image-12-juin-2025--23-04-46-removebg-preview-1-1.png"
-                />
-              </div>
-            </a>
-          </div>
-
-          {/* Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {navigationItems.map((item, index) => (
-              <a
-                key={index}
-                href={item.href}
-                className={`transition-colors duration-200 font-normal text-base ${
-                  item.active 
-                    ? "text-[#1090cb] font-medium" 
-                    : "text-black hover:text-[#1090cb]"
-                }`}
-              >
-                {item.label}
-              </a>
-            ))}
-          </nav>
-
-          {/* Language Selector & Contact Button */}
-          <div className="flex items-center space-x-4">
-            <LanguageSelector 
-              currentLanguage={currentLanguage}
-              onLanguageChange={setCurrentLanguage}
-            />
-            <Button 
-              onClick={handleContactClick}
-              className="bg-[#1090cb] hover:bg-[#0e7ba8] text-white px-6 py-2 rounded-md text-sm font-normal"
-            >
-              Contactez-nous
-            </Button>
-          </div>
-        </div>
-      </header>
+    <Layout currentPath="/about">
 
       {/* Hero Section */}
       <section className="relative w-full bg-gradient-to-br from-green-50 to-blue-50 py-16 overflow-hidden">
@@ -104,16 +48,15 @@ export const About = (): JSX.Element => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="text-[#1090cb] font-medium text-lg mb-4 block">À Propos</span>
+              <span className="text-[#1090cb] font-medium text-lg mb-4 block">{t("aboutPage.hero.badge")}</span>
               <h1 className="font-bold text-4xl lg:text-5xl text-gray-800 mb-6">
-                Lorem Ipsum is simply dummy text of the printing.
+                {t("aboutPage.hero.title")}
               </h1>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                {t("aboutPage.hero.description1")}
               </p>
               <p className="text-gray-600 text-base leading-relaxed">
-                Lorem Ipsum is simply dummy text of the printing.
+                {t("aboutPage.hero.description2")}
               </p>
             </div>
             
@@ -147,15 +90,12 @@ export const About = (): JSX.Element => {
       <section className="w-full py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="font-bold text-3xl lg:text-4xl text-[#1090cb] text-center mb-8">
-            Lorem Ipsum is simply dummy text of the printing.
+            {t("aboutPage.content.title")}
           </h2>
-          
+
           <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
             <p>
-              KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website 
-              builders measuring dozens of completed projects. We build and develop mobile applications for 
-              several top platforms, including Android & IOS. We build and develop mobile applications for several 
-              top platforms, including Android & IOS.
+              {t("aboutPage.content.description")}
             </p>
           </div>
         </div>
@@ -167,20 +107,19 @@ export const About = (): JSX.Element => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="font-bold text-3xl text-gray-800 mb-6">
-                Avec qui travaillons-Nous
+                {t("aboutPage.clients.title")}
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and 
-                website builders measuring dozens of completed projects.
+                {t("aboutPage.clients.description")}
               </p>
-              <Button 
+              <Button
                 onClick={handleContactClick}
                 className="bg-[#1090cb] hover:bg-[#0e7ba8] text-white px-8 py-3 rounded-lg font-normal"
               >
-                Contact us
+                {t("aboutPage.clients.button")}
               </Button>
             </div>
-            
+
             <div className="grid grid-cols-2 gap-6">
               {clientTypes.map((type, index) => (
                 <Card key={index} className="border border-gray-200 rounded-2xl hover:shadow-lg transition-shadow duration-300">
@@ -189,7 +128,7 @@ export const About = (): JSX.Element => {
                       <span className={`text-2xl ${type.iconColor}`}>{type.icon}</span>
                     </div>
                     <h3 className="font-semibold text-lg text-gray-800">
-                      {type.title}
+                      {t(type.titleKey)}
                     </h3>
                   </CardContent>
                 </Card>
@@ -206,79 +145,23 @@ export const About = (): JSX.Element => {
         
         <div className="max-w-4xl mx-auto px-4 text-center relative">
           <h2 className="font-bold text-3xl text-gray-800 mb-4">
-            Lorem Ipsum is simply dummy text of the printing.
+            {t("aboutPage.newsletter.title")}
           </h2>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto mt-8">
             <input
               type="email"
-              placeholder="Enter your email"
+              placeholder={t("aboutPage.newsletter.placeholder")}
               className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1090cb] focus:border-transparent"
             />
             <Button className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-lg font-normal">
-              SUBSCRIBE
+              {t("aboutPage.newsletter.button")}
             </Button>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="w-full bg-[#e8f4fa] py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-center mb-8">
-            <div className="w-32 h-32 relative">
-              <div className="absolute w-24 h-24 top-4 left-4 bg-[#1090cb]" />
-              <img
-                className="w-32 h-32 absolute top-0 left-0 object-cover"
-                alt="Logo"
-                src="/chatgpt-image-12-juin-2025--23-04-46-removebg-preview-1-1.png"
-              />
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <p className="text-gray-600 text-base leading-relaxed mb-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              </p>
-              <p className="text-gray-600 text-base">@Lorem</p>
-            </div>
-
-            <div>
-              <h3 className="font-medium text-black text-lg mb-4">About us</h3>
-              <nav className="space-y-2">
-                {["Lorem", "Portfolio", "Careers", "Contact us"].map((link, index) => (
-                  <div key={index} className="text-gray-600 hover:text-[#1090cb] cursor-pointer transition-colors">
-                    {link}
-                  </div>
-                ))}
-              </nav>
-            </div>
-
-            <div>
-              <h3 className="font-medium text-black text-lg mb-4">Contact us</h3>
-              <p className="text-gray-600 text-base leading-relaxed mb-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              </p>
-              <p className="text-gray-600 text-base">+908 89097 890</p>
-            </div>
-
-            <div className="flex justify-end">
-              <img
-                className="w-52 h-16 object-contain"
-                alt="Group"
-                src="/group-12.png"
-              />
-            </div>
-          </div>
-
-          <div className="border-t border-gray-300 pt-6 text-center">
-            <p className="text-gray-500 text-sm">
-              Copyright ® 2021 Lorem All rights Reserved
-            </p>
-          </div>
-        </div>
-      </footer>
-    </div>
+      </Layout>
   );
 };

@@ -1,74 +1,18 @@
 import React from "react";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
-import { LanguageSelector } from "../../components/LanguageSelector";
+import { Layout } from "../../components/Layout";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 export const Contact = (): JSX.Element => {
-  const [currentLanguage, setCurrentLanguage] = React.useState("fr");
-
-  const navigationItems = [
-    { label: "Home", href: "/" },
-    { label: "Services", href: "/services" },
-    { label: "Blog", href: "/blog" },
-    { label: "À propos", href: "/about" },
-    { label: "Tarifs", href: "/pricing" },
-  ];
+  const { t } = useLanguage();
 
   const handleContactClick = () => {
     window.location.href = "mailto:contact@ebservices.com?subject=Demande de contact général&body=Bonjour,%0D%0A%0D%0AJe souhaiterais vous contacter concernant vos services de traduction.%0D%0A%0D%0ACordialement";
   };
 
   return (
-    <div className="bg-white w-full min-h-screen">
-      {/* Header Navigation */}
-      <header className="relative w-full bg-white border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center">
-            <a href="/" className="block">
-              <div className="w-[142px] h-[136px] relative">
-                <div className="absolute w-[126px] h-[106px] top-0 left-0 bg-[#1090cb]" />
-                <img
-                  className="w-[142px] h-[136px] absolute top-0 left-0 object-cover"
-                  alt="Logo"
-                  src="/chatgpt-image-12-juin-2025--23-04-46-removebg-preview-1-1.png"
-                />
-              </div>
-            </a>
-          </div>
-
-          {/* Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {navigationItems.map((item, index) => (
-              <a
-                key={index}
-                href={item.href}
-                className={`transition-colors duration-200 font-normal text-base ${
-                  item.active 
-                    ? "text-[#1090cb] font-medium" 
-                    : "text-black hover:text-[#1090cb]"
-                }`}
-              >
-                {item.label}
-              </a>
-            ))}
-          </nav>
-
-          {/* Language Selector & Contact Button */}
-          <div className="flex items-center space-x-4">
-            <LanguageSelector 
-              currentLanguage={currentLanguage}
-              onLanguageChange={setCurrentLanguage}
-            />
-            <Button 
-              onClick={handleContactClick}
-              className="bg-[#1090cb] hover:bg-[#0e7ba8] text-white px-6 py-2 rounded-md text-sm font-normal"
-            >
-              Contactez-nous
-            </Button>
-          </div>
-        </div>
-      </header>
+    <Layout currentPath="/contact">
 
       {/* Hero Section */}
       <section className="relative w-full bg-gradient-to-br from-blue-50 to-purple-50 py-24 overflow-hidden">
@@ -83,55 +27,55 @@ export const Contact = (): JSX.Element => {
           </div>
           
           <h1 className="font-bold text-4xl lg:text-5xl text-gray-800 mb-6">
-            Let's <span className="text-[#1090cb]">Collaborate</span>
+            {t("contactPage.hero.title")}
           </h1>
-          
+
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            On vous attends en mail.
+            {t("contactPage.hero.subtitle")}
           </p>
-          
+
           <div className="space-y-6 text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto">
             <p className="font-medium text-xl text-gray-800 mb-4">
-              Pourquoi privilégier l'email ?
+              {t("contactPage.hero.whyEmailTitle")}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="flex items-center mb-3">
                   <span className="text-2xl mr-3">💬</span>
-                  <h3 className="font-semibold text-gray-800">Conversation naturelle</h3>
+                  <h3 className="font-semibold text-gray-800">{t("contactPage.reasons.conversation.title")}</h3>
                 </div>
                 <p className="text-gray-600">
-                  L'email permet un échange fluide et détaillé pour mieux comprendre vos besoins spécifiques.
+                  {t("contactPage.reasons.conversation.description")}
                 </p>
               </div>
-              
+
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="flex items-center mb-3">
                   <span className="text-2xl mr-3">📎</span>
-                  <h3 className="font-semibold text-gray-800">Partage de documents</h3>
+                  <h3 className="font-semibold text-gray-800">{t("contactPage.reasons.documents.title")}</h3>
                 </div>
                 <p className="text-gray-600">
-                  Envoyez directement vos fichiers à traduire pour une estimation précise et rapide.
+                  {t("contactPage.reasons.documents.description")}
                 </p>
               </div>
-              
+
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="flex items-center mb-3">
                   <span className="text-2xl mr-3">⏰</span>
-                  <h3 className="font-semibold text-gray-800">Réponse sous 24h</h3>
+                  <h3 className="font-semibold text-gray-800">{t("contactPage.reasons.response.title")}</h3>
                 </div>
                 <p className="text-gray-600">
-                  Nous nous engageons à vous répondre rapidement avec un devis personnalisé.
+                  {t("contactPage.reasons.response.description")}
                 </p>
               </div>
-              
+
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="flex items-center mb-3">
                   <span className="text-2xl mr-3">🔒</span>
-                  <h3 className="font-semibold text-gray-800">Confidentialité</h3>
+                  <h3 className="font-semibold text-gray-800">{t("contactPage.reasons.confidentiality.title")}</h3>
                 </div>
                 <p className="text-gray-600">
-                  Vos échanges et documents restent privés et sécurisés tout au long du processus.
+                  {t("contactPage.reasons.confidentiality.description")}
                 </p>
               </div>
             </div>
@@ -148,7 +92,7 @@ export const Contact = (): JSX.Element => {
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">📧</span>
                 </div>
-                <h3 className="font-semibold text-xl text-gray-800 mb-3">Email</h3>
+                <h3 className="font-semibold text-xl text-gray-800 mb-3">{t("contactPage.info.email")}</h3>
                 <p className="text-gray-600">contact@ebservices.com</p>
               </CardContent>
             </Card>
@@ -158,7 +102,7 @@ export const Contact = (): JSX.Element => {
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">📱</span>
                 </div>
-                <h3 className="font-semibold text-xl text-gray-800 mb-3">Téléphone</h3>
+                <h3 className="font-semibold text-xl text-gray-800 mb-3">{t("contactPage.info.phone")}</h3>
                 <p className="text-gray-600">+94 4444 5555 6</p>
               </CardContent>
             </Card>
@@ -170,78 +114,22 @@ export const Contact = (): JSX.Element => {
       <section className="w-full py-16 bg-[#e8f4fa]">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="font-bold text-3xl text-gray-800 mb-6">
-            Say <span className="text-[#1090cb]">hello</span>
+            {t("contactPage.cta.title")}<span className="text-[#1090cb]">{t("contactPage.cta.titleHighlight")}</span>
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            On vous attends en mail.
+            {t("contactPage.cta.subtitle")}
           </p>
-          
-          <Button 
+
+          <Button
             onClick={handleContactClick}
             className="bg-[#1090cb] hover:bg-[#0e7ba8] text-white px-12 py-4 rounded-lg font-normal text-lg"
           >
-            Get in touch
+            {t("contactPage.cta.button")}
           </Button>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="w-full bg-[#e8f4fa] py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-center mb-8">
-            <div className="w-32 h-32 relative">
-              <div className="absolute w-24 h-24 top-4 left-4 bg-[#1090cb]" />
-              <img
-                className="w-32 h-32 absolute top-0 left-0 object-cover"
-                alt="Logo"
-                src="/chatgpt-image-12-juin-2025--23-04-46-removebg-preview-1-1.png"
-              />
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <p className="text-gray-600 text-base leading-relaxed mb-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              </p>
-              <p className="text-gray-600 text-base">@Lorem</p>
-            </div>
-
-            <div>
-              <h3 className="font-medium text-black text-lg mb-4">About us</h3>
-              <nav className="space-y-2">
-                {["Lorem", "Portfolio", "Careers", "Contact us"].map((link, index) => (
-                  <div key={index} className="text-gray-600 hover:text-[#1090cb] cursor-pointer transition-colors">
-                    {link}
-                  </div>
-                ))}
-              </nav>
-            </div>
-
-            <div>
-              <h3 className="font-medium text-black text-lg mb-4">Contact us</h3>
-              <p className="text-gray-600 text-base leading-relaxed mb-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              </p>
-              <p className="text-gray-600 text-base">+908 89097 890</p>
-            </div>
-
-            <div className="flex justify-end">
-              <img
-                className="w-52 h-16 object-contain"
-                alt="Group"
-                src="/group-12.png"
-              />
-            </div>
-          </div>
-
-          <div className="border-t border-gray-300 pt-6 text-center">
-            <p className="text-gray-500 text-sm">
-              Copyright ® 2021 Lorem All rights Reserved
-            </p>
-          </div>
-        </div>
-      </footer>
-    </div>
+      </Layout>
   );
 };

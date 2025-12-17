@@ -1,0 +1,431 @@
+{
+  "header": {
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "blog": "Blog",
+    "about": "Über uns",
+    "pricing": "Preise",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "about": "Über uns",
+    "aboutText": "EB Services - Hochpräzise technische und industrielle Übersetzung. Zertifizierter unabhängiger Experte, spezialisiert auf technische Handbücher, Patente und Industriedokumentation. FR · EN · DE · IT",
+    "social": "@EBServices",
+    "contactTitle": "Kontakt",
+    "contactText": "Benötigen Sie ein Angebot oder Informationen zu unseren Übersetzungsdienstleistungen? Kontaktieren Sie uns für eine persönliche Beratung.",
+    "email": "contact@ebservices.com",
+    "navigation": {
+      "home": "Startseite",
+      "services": "Dienstleistungen",
+      "expertise": "Expertise",
+      "contact": "Kontakt"
+    },
+    "copyright": "Copyright © 2025 EB Services - Alle Rechte vorbehalten"
+  },
+  "home": {
+    "hero": {
+      "title1": "Übersetzungen von ",
+      "title1Highlight": "Menschen",
+      "title2": "Sprachliche ",
+      "title2Highlight": "Expertise",
+      "title3": "Maßgeschneiderte",
+      "title3Highlight": " Lösungen",
+      "description": "Als Spezialist für Industrieübersetzungen unterstütze ich Unternehmen beim Verfassen ihrer technischen Handbücher. Präzise Übersetzungen, die an Ihre branchenspezifischen Anforderungen angepasst sind, um die Klarheit und Konformität Ihrer Dokumente zu gewährleisten.",
+      "discover": "Entdecken",
+      "contactMe": "Kontaktieren Sie mich"
+    },
+    "features": {
+      "questions": {
+        "title": "Ihre Fragen",
+        "description": "Kostenloses Angebot in 24 Stunden"
+      },
+      "workspace": {
+        "title": "Arbeitsbereich",
+        "description": "InDesign, XML und mehr Formate"
+      },
+      "aiTranslation": {
+        "title": "KI und Übersetzung",
+        "description": "Technologie + menschliche Expertise"
+      },
+      "pricing": {
+        "title": "Preisgestaltung",
+        "description": "Transparente Preise pro Wort"
+      }
+    },
+    "companies": "Andere haben mir vertraut",
+    "services": {
+      "title": "Professionelle Übersetzung und Dolmetschen",
+      "description": "Vertrauen Sie Ihre Übersetzungen einem Fachmann an, der Expertise, Präzision und Liebe zum Detail vereint."
+    },
+    "translation": {
+      "badge": {
+        "title": "Garantierte Reaktionsfähigkeit",
+        "description": "Ein einziger Ansprechpartner für alle Ihre technischen Übersetzungen"
+      },
+      "title1": "Schätzung & Angebot",
+      "title2": " in 24 Stunden",
+      "steps": [
+        "Reichen Sie schnell Ihre zu übersetzenden Dokumente ein.",
+        "Wir analysieren jede Anfrage sorgfältig.",
+        "Profitieren Sie von maßgeschneiderter Unterstützung.",
+        "Erhalten Sie Ihr kostenloses Angebot innerhalb von 24 Stunden.",
+        "Ein klares Angebot, das auf Ihre sprachlichen Bedürfnisse zugeschnitten ist."
+      ],
+      "button": "Angebot anfordern"
+    },
+    "quality": {
+      "badge": {
+        "title": "Absolute technische Präzision",
+        "description": "Übersetzung nur in meine Muttersprache (FR, EN, DE, IT)"
+      },
+      "title1": "Maßgeschneiderter ",
+      "title2": "Übersetzungsprozess",
+      "steps": [
+        "Sie bestätigen jede Phase des Projekts mit Zuversicht.",
+        "Unsere Sprachexperten gewährleisten Präzision und Genauigkeit.",
+        "Übersetzung gemäß Ihren Anforderungen und Fristen.",
+        "Ihre Inhalte werden in die gewählte Zielsprache lokalisiert.",
+        "Persönliche Betreuung bis zur endgültigen Lieferung."
+      ],
+      "button": "Testen"
+    },
+    "testimonials": {
+      "user": {
+        "name": "Sophie Marchand",
+        "title": "Technische Direktorin, Maschinenbau"
+      },
+      "heading1": "Abschließende ",
+      "heading2": "Überprüfung",
+      "heading3": " und Projekt",
+      "heading4": "verwaltung ",
+      "description": "Jede Übersetzung wird sorgfältig Korrektur gelesen und korrigiert.\nAbschlusskontrolle zur Gewährleistung von Genauigkeit und Qualität.\nVollständige Validierung vor der Lieferung.\nDokumente werden innerhalb der vereinbarten Fristen übermittelt.\nTransparente Abrechnung und sichere Archivierung Ihrer Projekte.",
+      "button": "Beispiel?"
+    },
+    "contact": {
+      "knowHow": {
+        "title": "Know-how",
+        "content": "Maßgeschneiderte Übersetzungen, angepasst an jeden Bereich und immer in die Muttersprache.\nExpertise, Präzision und kontinuierliche Weiterbildung zur Gewährleistung von Qualität und Genauigkeit.\nVertraulichkeit und Einhaltung von Fristen für jeden Auftrag gewährleistet.",
+        "button": "Mehr erfahren"
+      },
+      "quality": {
+        "title": "Qualitätsverpflichtungen",
+        "content": "EB Services stellt immer sicher, dass die notwendigen Bedingungen für qualitativ hochwertige Arbeit erfüllt sind. Ich verpflichte mich, nach den höchsten Standards zu arbeiten.",
+        "button": "Mehr erfahren"
+      }
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "title": "Lassen Sie uns zusammenarbeiten",
+      "subtitle": "Wir warten auf Ihre E-Mail.",
+      "whyEmailTitle": "Warum E-Mail bevorzugen?"
+    },
+    "reasons": {
+      "conversation": {
+        "title": "Natürliches Gespräch",
+        "description": "E-Mail ermöglicht einen fließenden und detaillierten Austausch, um Ihre spezifischen Bedürfnisse besser zu verstehen."
+      },
+      "documents": {
+        "title": "Dokumentenaustausch",
+        "description": "Senden Sie Ihre zu übersetzenden Dateien direkt für eine genaue und schnelle Schätzung."
+      },
+      "response": {
+        "title": "Antwort innerhalb 24h",
+        "description": "Wir verpflichten uns, schnell mit einem personalisierten Angebot zu antworten."
+      },
+      "confidentiality": {
+        "title": "Vertraulichkeit",
+        "description": "Ihre Austausche und Dokumente bleiben während des gesamten Prozesses privat und sicher."
+      }
+    },
+    "info": {
+      "email": "E-Mail",
+      "phone": "Telefon"
+    },
+    "cta": {
+      "title": "Sagen Sie",
+      "titleHighlight": " Hallo",
+      "subtitle": "Wir warten auf Ihre E-Mail.",
+      "button": "Kontakt aufnehmen"
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "title": "Unsere ",
+      "titleHighlight": "Dienstleistungen",
+      "description1": "EB Services unterstützt Unternehmen aller Branchen mit personalisierten Dienstleistungen in Englisch, Deutsch, Italienisch und Französisch (andere Sprachen auf Anfrage).",
+      "description2": "Übersetzungen, die Ihren Anforderungen entsprechen, termingerecht und in absoluter Vertraulichkeit geliefert."
+    },
+    "features": {
+      "expertise": {
+        "title": "Branchenexpertise",
+        "description": "Präzise Übersetzungen, die auf Ihr Tätigkeitsfeld zugeschnitten sind: Industrie, Gesundheitswesen, Energie, Umwelt usw."
+      },
+      "languages": {
+        "title": "Angebotene Sprachen",
+        "description": "Französisch, Englisch, Deutsch (weitere Sprachen auf Anfrage), um Ihr internationales Publikum zu erweitern."
+      },
+      "deadlines": {
+        "title": "Einhaltung von Fristen",
+        "description": "Kontrollierte Fristen und persönliche Betreuung für jedes Projekt, ohne Kompromisse bei der Qualität."
+      },
+      "confidentiality": {
+        "title": "Garantierte Vertraulichkeit",
+        "description": "Sicherheit und Diskretion für alle Ihre Dokumente gewährleistet, von der Annahme bis zur Lieferung."
+      }
+    },
+    "offerings": {
+      "medical": {
+        "title": "Medizinische & Gesundheitsübersetzung",
+        "description": "Lassen Sie Ihre medizinischen Dokumente, Berichte, Beipackzettel und Gesundheitsakten von einem Fachmann übersetzen, der terminologische Präzision, Vertraulichkeit und Anpassung an Branchenstandards garantiert.",
+        "button": "Gesundheitsangebot anfordern"
+      },
+      "technical": {
+        "title": "Technische & industrielle Übersetzung",
+        "description": "Maßgeschneiderte technische Übersetzungen für Metallurgie, Öl & Gas, Industriemaschinenbau und Energie, durchgeführt unter Einhaltung branchenspezifischer Anforderungen und technischer Präzision.",
+        "button": "Meine Industriedokumente übersetzen"
+      },
+      "transport": {
+        "title": "Transport & Logistikübersetzung",
+        "description": "Vertrauen Sie die Übersetzung Ihrer technischen Unterlagen, Produktblätter und Handbücher aus Luftfahrt, Automobil oder Schienenverkehr einem Experten an, der auf die beruflichen Herausforderungen der Mobilität achtet.",
+        "button": "Mein Transportprojekt starten"
+      },
+      "environment": {
+        "title": "Umwelt & nachhaltige Entwicklung Übersetzung",
+        "description": "Professionelle Übersetzung für Ihre Projekte in Abfallwirtschaft, Kreislaufwirtschaft oder nachhaltiger Entwicklung, mit einem Ansatz, der Umweltwerte und -standards respektiert.",
+        "button": "Ihre grünen Initiativen fördern"
+      },
+      "marketing": {
+        "title": "Marketing & kreative Industrien Übersetzung",
+        "description": "Steigern Sie die Wirkung Ihrer Marketingkampagnen, audiovisuellen Kreationen oder digitalen Inhalte mit Übersetzungen, die kulturelle Codes berücksichtigen und auf Ihre Zielgruppe zugeschnitten sind.",
+        "button": "Mein internationales Marketing dynamisieren"
+      }
+    },
+    "stats": {
+      "happyClients": "Zufriedene Kunden",
+      "completedProjects": "Abgeschlossene Projekte",
+      "clients": "Kunden",
+      "wordsTranslated": "Übersetzte Wörter"
+    },
+    "projects": {
+      "title": "Unsere neuesten Projekte",
+      "technical": {
+        "title": "Industrielle technische Übersetzung",
+        "description": "Bedienungsanleitungen, technische Datenblätter und Industriedokumentation mit Sorgfalt übersetzt. Absolute Einhaltung der Branchenterminologie."
+      },
+      "patents": {
+        "title": "Patentübersetzung",
+        "description": "Übersetzung von Patenten und juristisch-technischen Dokumenten. Garantierte Vertraulichkeit. Expertise in geistigem Eigentum und juristischer Terminologie."
+      },
+      "localization": {
+        "title": "Industrielle Lokalisierung",
+        "description": "Kulturelle und sprachliche Anpassung Ihrer Inhalte. Über die Übersetzung hinaus kontextualisiere ich für Ihren Zielmarkt."
+      }
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "subtitle": "Weniger reden, mehr übersetzen",
+      "placeholder": "Geben Sie Ihre E-Mail ein",
+      "button": "ABONNIEREN"
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "badge": "Über uns",
+      "title": "Ihr vertrauenswürdiger Partner für präzise technische Übersetzungen",
+      "description1": "EB Services ist ein auf technische und industrielle Übersetzungen spezialisiertes Unternehmen. Mit Fachkenntnissen in Industrie, Gesundheitswesen, Transport und Umwelt unterstützen wir Unternehmen bei ihrer internationalen Entwicklung.",
+      "description2": "Unser Engagement: getreue, präzise Übersetzungen, die auf Ihre Branche zugeschnitten sind."
+    },
+    "content": {
+      "title": "Expertise im Dienste Ihres internationalen Erfolgs",
+      "description": "EB Services wird von einem zertifizierten technischen Übersetzer geleitet, der über mehrjährige Erfahrung in der Übersetzung komplexer Industriedokumente verfügt. Wir beherrschen die technischen und terminologischen Feinheiten jedes Sektors, um Ihnen Übersetzungen höchster Qualität zu garantieren."
+    },
+    "clients": {
+      "title": "Mit wem wir arbeiten",
+      "description": "EB Services unterstützt eine vielfältige Kundschaft, von großen internationalen Unternehmen über KMU und Privatpersonen bis hin zu Industrieakteuren aller Sektoren.",
+      "button": "Kontaktieren Sie uns",
+      "types": {
+        "largeCompanies": "Große Unternehmen",
+        "sme": "KMU",
+        "individuals": "Privatpersonen",
+        "industrial": "Industriell"
+      }
+    },
+    "newsletter": {
+      "title": "Bleiben Sie über unsere Neuigkeiten und Übersetzungstipps informiert",
+      "placeholder": "Geben Sie Ihre E-Mail ein",
+      "button": "ABONNIEREN"
+    }
+  },
+  "pricingPage": {
+    "hero": {
+      "title": "Unsere ",
+      "titleHighlight": "Preise",
+      "subtitle": "Transparente Preise, die auf Ihre Übersetzungsbedürfnisse zugeschnitten sind",
+      "description1": "Jedes Projekt ist einzigartig. Wir erstellen personalisierte Angebote",
+      "description2": "basierend auf Ihren Spezifikationen und Fristen."
+    },
+    "process": {
+      "title": "Wie wir vorgehen",
+      "subtitle": "Ein einfacher und transparenter Prozess, um Ihre professionellen Übersetzungen zu erhalten",
+      "steps": {
+        "analysis": {
+          "step": "01",
+          "title": "Analyse Ihrer Anfrage",
+          "description": "Senden Sie uns Ihre Dokumente und geben Sie Ihre Bedürfnisse an. Wir analysieren Umfang, Komplexität und gewünschte Fristen."
+        },
+        "quote": {
+          "step": "02",
+          "title": "Personalisiertes Angebot innerhalb 24h",
+          "description": "Erhalten Sie ein detailliertes Angebot mit transparenten Preisen, Lieferfristen und Zahlungsbedingungen."
+        },
+        "translation": {
+          "step": "03",
+          "title": "Übersetzung und Revision",
+          "description": "Unsere Sprachexperten übersetzen Ihre Dokumente mit Präzision und korrigieren dann jeden Text sorgfältig."
+        },
+        "delivery": {
+          "step": "04",
+          "title": "Lieferung und Nachverfolgung",
+          "description": "Erhalt Ihrer finalisierten Übersetzungen innerhalb der vereinbarten Fristen mit Möglichkeit geringfügiger Überarbeitungen."
+        }
+      }
+    },
+    "factors": {
+      "title": "Faktoren, die unsere Preise beeinflussen",
+      "subtitle": "Mehrere Elemente werden berücksichtigt, um Ihr personalisiertes Angebot zu erstellen",
+      "volume": {
+        "title": "Textumfang",
+        "description": "Preisgestaltung pro Ausgangswort mit Rabatten für große Mengen"
+      },
+      "languages": {
+        "title": "Sprachkombination",
+        "description": "Variable Preise je nach Ausgangs- und Zielsprache"
+      },
+      "specialization": {
+        "title": "Technische Spezialisierung",
+        "description": "Zuschlag für hochspezialisierte Fachgebiete"
+      },
+      "deadline": {
+        "title": "Lieferfristen",
+        "description": "Express-Zuschlag für dringende Projekte"
+      },
+      "format": {
+        "title": "Dateiformat",
+        "description": "Zuschlag für komplexe Formate, die Formatierung erfordern"
+      },
+      "services": {
+        "title": "Zusätzliche Dienstleistungen",
+        "description": "Korrekturlesen, Revision, Layout nach Ihren Bedürfnissen"
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihr personalisiertes Angebot zu erhalten?",
+      "subtitle": "Senden Sie uns Ihre Dokumente und erhalten Sie eine Schätzung innerhalb 24h",
+      "button": "Kostenloses Angebot anfordern"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "Finden Sie Antworten auf die häufigsten Fragen zu unseren Preisen und Dienstleistungen",
+      "items": {
+        "pricing": {
+          "question": "Wie berechnen Sie Ihre Übersetzungspreise?",
+          "answer": "Unsere Preise werden pro Ausgangswort berechnet, mit variablen Preisen je nach Sprachkombination, technischer Spezialisierung und Fristen. Wir bieten Mengenrabatte für große Volumina und Vorzugspreise für unsere Stammkunden."
+        },
+        "deadlines": {
+          "question": "Welche Lieferfristen haben Sie?",
+          "answer": "Die Fristen hängen von Umfang und Komplexität des Projekts ab. Im Durchschnitt übersetzen wir 2000 bis 3000 Wörter pro Tag. Für dringende Projekte bieten wir einen Express-Service mit Preiszuschlag an."
+        },
+        "revisions": {
+          "question": "Bieten Sie Überarbeitungen nach der Lieferung an?",
+          "answer": "Ja, wir bieten kostenlose geringfügige Überarbeitungen innerhalb von 7 Tagen nach Lieferung an. Für größere Änderungen oder Briefänderungen wird ein Zusatzangebot erstellt."
+        },
+        "native": {
+          "question": "Arbeiten Sie mit muttersprachlichen Übersetzern?",
+          "answer": "Selbstverständlich. Alle unsere Übersetzer sind Muttersprachler der Zielsprache und auf ihr Fachgebiet spezialisiert. Dies garantiert die sprachliche und kulturelle Qualität unserer Übersetzungen."
+        },
+        "confidentiality": {
+          "question": "Wie garantieren Sie Vertraulichkeit?",
+          "answer": "Wir unterzeichnen Vertraulichkeitsvereinbarungen (NDA) für alle unsere Projekte. Ihre Dokumente werden sicher gespeichert und nach der Archivierung gemäß unseren allgemeinen Bedingungen gelöscht."
+        },
+        "formats": {
+          "question": "Akzeptieren Sie alle Arten von Dateiformaten?",
+          "answer": "Wir arbeiten mit den meisten Formaten: Word, PDF, Excel, PowerPoint, InDesign, HTML, XML usw. Für spezielle Formate bestätigen wir die Machbarkeit bei der Analyse Ihrer Anfrage."
+        },
+        "proofreading": {
+          "question": "Bieten Sie nur Korrekturlesen an?",
+          "answer": "Ja, wir bieten Korrekturlese- und Revisionsdienste für bereits übersetzte Texte an. Dieser Service wird zu einem reduzierten Preis im Vergleich zu einer vollständigen Übersetzung berechnet."
+        },
+        "payment": {
+          "question": "Wie funktioniert die Zahlung?",
+          "answer": "Für neue Kunden verlangen wir eine Anzahlung von 50% bei Bestellung. Der Restbetrag ist bei Lieferung fällig. Unsere Stammkunden profitieren von 30-Tage-Zahlungszielen."
+        }
+      }
+    }
+  },
+  "blogPage": {
+    "hero": {
+      "title": "KI und ",
+      "titleHighlight": "Übersetzung",
+      "subtitle": "Eine wesentliche Zusammenarbeit für die Zukunft der professionellen Übersetzung",
+      "publishInfo": "Veröffentlicht am 15. Januar 2025 • 8 Minuten Lesezeit"
+    },
+    "intro": {
+      "lead": "Übersetzung ist viel mehr als ein einfacher Übergang von einer Sprache zur anderen: Sie ist die Grundlage für kulturellen und wirtschaftlichen Austausch. Lange Zeit Sprachexperten vorbehalten, wird sie heute durch den Aufstieg der künstlichen Intelligenz (KI) revolutioniert.",
+      "paragraph1": "In nur wenigen Jahren haben sich automatische Übersetzungstools als unverzichtbare Verbündete etabliert. Schnell, leistungsstark und zunehmend präzise verändern sie tiefgreifend die Arbeitsweise von Übersetzern. Aber wie weit kann die KI gehen? Kann sie wirklich den Menschen ersetzen?",
+      "paragraph2": "In diesem Artikel untersuchen wir die Rolle der KI in der Übersetzung, ihre Vorteile, ihre Grenzen und die Zukunft der Mensch-Maschine-Zusammenarbeit."
+    },
+    "aiRole": {
+      "title": "Die Rolle der KI in der Übersetzung",
+      "paragraph1": "KI-basierte automatische Übersetzungssysteme analysieren den Ausgangstext und übersetzen ihn sofort in die Zielsprache. Dank fortschrittlicher Algorithmen bewahren sie Syntax, Grammatik und die Gesamtbedeutung des Textes.",
+      "highlightSuccess": "➡️ Ihr Hauptvorteil? Geschwindigkeit: Massive Mengen an Inhalten können in Sekunden übersetzt werden.",
+      "highlightWarning": "⚠️ Aber KI ist nicht unfehlbar. Einige Fehler, Ungeschicklichkeiten oder Fehlübersetzungen treten immer noch auf, was die Intervention eines menschlichen Übersetzers für Überarbeitung und kulturelle Anpassung unerlässlich macht."
+    },
+    "collaboration": {
+      "title": "KI und Übersetzer: eine unverzichtbare Zusammenarbeit",
+      "paragraph1": "Für Übersetzungsprofis ist KI keine Bedrohung, sondern ein ergänzendes Werkzeug. Der Prozess beruht im Allgemeinen auf zwei Schritten:",
+      "step1": "Automatische Übersetzung mit einem KI-Tool.",
+      "step2": "Menschliche Überarbeitung durch einen muttersprachlichen Übersetzer, der den Text verfeinert, Inkonsistenzen korrigiert und die kulturelle und stilistische Dimension wiederherstellt.",
+      "highlightInfo": "👉 Ergebnis: Schnellere, genauere Übersetzungen, aber immer angereichert mit menschlicher Sensibilität."
+    },
+    "advantages": {
+      "title": "Die Vorteile der Übersetzung mit KI",
+      "paragraph1": "Künstliche Intelligenz transformiert den Übersetzerberuf und die Erwartungen von Unternehmen:",
+      "benefit1": "Erhebliche Zeitersparnis: Verarbeitung großer Mengen in Minuten.",
+      "benefit2": "Reduzierte Kosten: Weniger personelle Ressourcen als bei manueller Übersetzung erforderlich.",
+      "benefit3": "Ein Vorteil für Spezialisierungen (Recht, Medizin, Technik, Literatur) dank Übersetzungsspeichern und terminologischen Datenbanken.",
+      "benefit4": "Gesteigerte Produktivität für Übersetzer, die über leistungsstarke Tools zum Suchen, Harmonisieren und Automatisieren bestimmter Aufgaben verfügen."
+    },
+    "limitations": {
+      "title": "Die Grenzen der KI in der Übersetzung",
+      "paragraph1": "Trotz ihrer Leistung steht die KI noch vor großen Herausforderungen:",
+      "limit1": "Falsch interpretierter Kontext: Einige Sätze verlieren ihre Subtilität.",
+      "limit2": "Schlecht übersetzte kulturelle Nuancen: Sprichwörter, Wortspiele, Idiome entgehen den Algorithmen.",
+      "limit3": "Mangelnde Flüssigkeit: Texte können mechanisch oder künstlich wirken.",
+      "paragraph2": "Kurz gesagt, KI kann menschliche Kreativität, Sensibilität und Intuition noch nicht reproduzieren."
+    },
+    "future": {
+      "title": "Die Zukunft: Eine Allianz zwischen Technologie und menschlicher Expertise",
+      "paragraph1": "Anstatt KI und Übersetzer gegeneinander auszuspielen, müssen wir in Bezug auf Zusammenarbeit denken.",
+      "aiLabel": "KI",
+      "aiDescription": "Automatisiert und beschleunigt",
+      "humanLabel": "Mensch",
+      "humanDescription": "Nuanciert und kontextualisiert",
+      "paragraph2": "Diese Komplementarität eröffnet den Weg zu einer neuen Ära: schnellere, präzisere Übersetzungen, die an die spezifischen Bedürfnisse der Kunden angepasst sind.",
+      "paragraph3": "Die Übersetzer von morgen müssen sich anpassen durch:",
+      "adaptation1": "Beherrschung technologischer Werkzeuge,",
+      "adaptation2": "Spezialisierung in hochwertigen Nischen,",
+      "adaptation3": "und weiterhin das anzubieten, was KI nicht ersetzen kann: den kulturellen Fußabdruck und die menschliche Note."
+    },
+    "conclusion": {
+      "title": "Fazit",
+      "paragraph1": "Künstliche Intelligenz ersetzt Übersetzer nicht, sie transformiert ihren Beruf. Sie ermöglicht es ihnen, an Effizienz zu gewinnen und gleichzeitig das hervorzuheben, was sie unersetzlich macht: ihre Sensibilität, ihre Kultur und ihre Expertise.",
+      "highlight": "👉 Kurz gesagt, die Zukunft der Übersetzung beruht auf einer strategischen Allianz zwischen technologischer Innovation und menschlichen Fähigkeiten."
+    },
+    "cta": {
+      "title": "Benötigen Sie eine professionelle Übersetzung?",
+      "description": "Entdecken Sie, wie wir KI und menschliche Expertise für Ihre Übersetzungsprojekte kombinieren.",
+      "button": "Angebot anfordern"
+    }
+  }
+}

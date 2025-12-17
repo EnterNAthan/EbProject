@@ -1,22 +1,17 @@
 import React, { useState } from "react";
+import { useLanguage } from "../../contexts/LanguageContext";
 
-interface LanguageSelectorProps {
-  currentLanguage: string;
-  onLanguageChange: (language: string) => void;
-}
-
-export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
-  currentLanguage,
-  onLanguageChange,
-}) => {
+export const LanguageSelector: React.FC = () => {
+  const { language, setLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
 
   const languages = [
-    { code: "fr", name: "Français", flag: "🇫🇷" },
-    { code: "en", name: "English", flag: "🇬🇧" },
+    { code: "fr" as const, name: "Français", flag: "🇫🇷" },
+    { code: "en" as const, name: "English", flag: "🇬🇧" },
+    { code: "de" as const, name: "Deutsch", flag: "🇩🇪" },
   ];
 
-  const currentLang = languages.find(lang => lang.code === currentLanguage) || languages[0];
+  const currentLang = languages.find(lang => lang.code === language) || languages[0];
 
   return (
     <div className="relative">
@@ -40,19 +35,19 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
 
       {isOpen && (
         <div className="absolute right-0 mt-2 w-40 bg-white border border-gray-200 rounded-md shadow-lg z-50">
-          {languages.map((language) => (
+          {languages.map((lang) => (
             <button
-              key={language.code}
+              key={lang.code}
               onClick={() => {
-                onLanguageChange(language.code);
+                setLanguage(lang.code);
                 setIsOpen(false);
               }}
               className={`w-full flex items-center space-x-3 px-4 py-3 text-left hover:bg-gray-50 transition-colors duration-200 ${
-                currentLanguage === language.code ? "bg-blue-50 text-[#1090cb]" : "text-gray-700"
+                language === lang.code ? "bg-blue-50 text-[#1090cb]" : "text-gray-700"
               }`}
             >
-              <span className="text-lg">{language.flag}</span>
-              <span className="text-sm font-medium">{language.name}</span>
+              <span className="text-lg">{lang.flag}</span>
+              <span className="text-sm font-medium">{lang.name}</span>
             </button>
           ))}
         </div>

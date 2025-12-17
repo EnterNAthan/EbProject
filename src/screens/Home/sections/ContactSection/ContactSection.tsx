@@ -1,31 +1,33 @@
 import React from "react";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
-
-const cardData = [
-  {
-    title: "Savoir-faire",
-    content:
-      "Traductions sur-mesure, adaptées à chaque domaine et toujours vers la langue maternelle.\nExpertise, rigueur et formation continue pour garantir qualité et précision.\nConfidentialité et respect des délais assurés pour chaque mission.",
-    bgColor: "bg-[#f4f4f4]",
-    titleColor: "text-[#252525]",
-    textColor: "text-[#545454]",
-    buttonBg: "bg-[#1090cb]",
-    buttonText: "text-white",
-  },
-  {
-    title: "Engagements Qualité",
-    content:
-      "EB Services s'assure toujours de réunir les conditions nécessaires pour réaliser un travail de qualité. Je m'engage à travailler selon les normes les plus élevées.",
-    bgColor: "bg-[#1090cb]",
-    titleColor: "text-white",
-    textColor: "text-white",
-    buttonBg: "bg-white",
-    buttonText: "text-[#1090cb]",
-  },
-];
+import { useLanguage } from "../../../../contexts/LanguageContext";
 
 export const ContactSection = (): JSX.Element => {
+  const { t } = useLanguage();
+
+  const cardData = [
+    {
+      title: t("home.contact.knowHow.title"),
+      content: t("home.contact.knowHow.content"),
+      buttonLabel: t("home.contact.knowHow.button"),
+      bgColor: "bg-[#f4f4f4]",
+      titleColor: "text-[#252525]",
+      textColor: "text-[#545454]",
+      buttonBg: "bg-[#1090cb]",
+      buttonText: "text-white",
+    },
+    {
+      title: t("home.contact.quality.title"),
+      content: t("home.contact.quality.content"),
+      buttonLabel: t("home.contact.quality.button"),
+      bgColor: "bg-[#1090cb]",
+      titleColor: "text-white",
+      textColor: "text-white",
+      buttonBg: "bg-white",
+      buttonText: "text-[#1090cb]",
+    },
+  ];
   return (
     <div className="w-full">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -49,7 +51,7 @@ export const ContactSection = (): JSX.Element => {
                 <Button
                   className={`${card.buttonBg} ${card.buttonText} rounded-lg font-medium text-base px-8 py-3 hover:opacity-90 transition-opacity duration-200`}
                 >
-                  View More
+                  {card.buttonLabel}
                 </Button>
               </div>
             </CardContent>

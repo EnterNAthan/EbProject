@@ -1,0 +1,9 @@
+<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icône représentant qualité/validation : badge avec check -->
+
+  <!-- Badge/Médaille en forme d'étoile simplifiée -->
+  <path d="M13 2L15.5 9L23 9.5L17.5 14.5L19 22L13 18L7 22L8.5 14.5L3 9.5L10.5 9L13 2Z" fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <!-- Check mark au centre -->
+  <path d="M9 13L11.5 15.5L17 10" stroke="#9207d3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,431 @@
+{
+  "header": {
+    "home": "Home",
+    "services": "Services",
+    "blog": "Blog",
+    "about": "À propos",
+    "pricing": "Tarifs",
+    "contact": "Contactez-nous"
+  },
+  "footer": {
+    "about": "À propos",
+    "aboutText": "EB Services - Traduction technique et industrielle de haute précision. Expert indépendant certifié, spécialisé dans les notices techniques, brevets et documentation industrielle. FR · EN · DE · IT",
+    "social": "@EBServices",
+    "contactTitle": "Contactez-nous",
+    "contactText": "Besoin d'un devis ou d'informations sur nos services de traduction ? Contactez-nous pour un accompagnement personnalisé.",
+    "email": "contact@ebservices.com",
+    "navigation": {
+      "home": "Accueil",
+      "services": "Services",
+      "expertise": "Expertise",
+      "contact": "Contact"
+    },
+    "copyright": "Copyright © 2025 EB Services - Tous droits réservés"
+  },
+  "home": {
+    "hero": {
+      "title1": "Des traductions ",
+      "title1Highlight": "humaines",
+      "title2": "Une expertise ",
+      "title2Highlight": "linguistique",
+      "title3": "Des solutions",
+      "title3Highlight": " sur mesure",
+      "description": "Spécialiste de la traduction pour l'industrie, j'accompagne les entreprises dans la rédaction de leurs notices techniques. Des traductions précises et adaptées à vos exigences sectorielles, pour garantir la clarté et la conformité de vos documents.",
+      "discover": "Découvrir",
+      "contactMe": "Contactez-moi"
+    },
+    "features": {
+      "questions": {
+        "title": "Vos questions",
+        "description": "Devis gratuit en 24h chrono"
+      },
+      "workspace": {
+        "title": "Espace de travail",
+        "description": "Formats InDesign, XML et plus"
+      },
+      "aiTranslation": {
+        "title": "IA et traduction",
+        "description": "Technologie + expertise humaine"
+      },
+      "pricing": {
+        "title": "Le tarif",
+        "description": "Tarification transparente au mot"
+      }
+    },
+    "companies": "D'autres m'ont fait confiance",
+    "services": {
+      "title": "Traduction et Interprétation Professionnelles",
+      "description": "Confiez vos traductions à un professionnel qui conjuguent expertise, précision et sens du détail."
+    },
+    "translation": {
+      "badge": {
+        "title": "Réactivité garantie",
+        "description": "Un interlocuteur unique pour toutes vos traductions techniques"
+      },
+      "title1": "Estimation & Création",
+      "title2": " de devis en 24H",
+      "steps": [
+        "Déposez rapidement vos documents à traduire.",
+        "Nous analysons chaque demande avec attention.",
+        "Profitez d'une prise en charge sur-mesure.",
+        "Recevez votre devis gratuit en 24h.",
+        "Une proposition claire et adaptée à vos besoins linguistiques."
+      ],
+      "button": "Demander un devis"
+    },
+    "quality": {
+      "badge": {
+        "title": "Rigueur technique absolue",
+        "description": "Traduction vers ma langue maternelle uniquement (FR, EN, DE, IT)"
+      },
+      "title1": "Processus de traduction ",
+      "title2": "sur-mesure",
+      "steps": [
+        "Vous validez chaque étape du projet en toute confiance.",
+        "Nos experts linguistiques assurent précision et rigueur.",
+        "Traduction conforme à vos exigences et délais.",
+        "Vos contenus sont localisés dans la langue cible choisie.",
+        "Un suivi personnalisé jusqu'à la livraison finale."
+      ],
+      "button": "Je Test"
+    },
+    "testimonials": {
+      "user": {
+        "name": "Sophie Marchand",
+        "title": "Directrice Technique, Industrie Mécanique"
+      },
+      "heading1": "Relecture ",
+      "heading2": "finale",
+      "heading3": " et gestion de ",
+      "heading4": "projet ",
+      "description": "Chaque traduction est soigneusement relue et corrigée.\nContrôle final pour garantir l'exactitude et la qualité.\nValidation complète avant la livraison.\nDocuments transmis dans le respect des délais convenus.\nFacturation transparente et archivage sécurisé de vos projets.",
+      "button": "Exemple ?"
+    },
+    "contact": {
+      "knowHow": {
+        "title": "Savoir-faire",
+        "content": "Traductions sur-mesure, adaptées à chaque domaine et toujours vers la langue maternelle.\nExpertise, rigueur et formation continue pour garantir qualité et précision.\nConfidentialité et respect des délais assurés pour chaque mission.",
+        "button": "View More"
+      },
+      "quality": {
+        "title": "Engagements Qualité",
+        "content": "EB Services s'assure toujours de réunir les conditions nécessaires pour réaliser un travail de qualité. Je m'engage à travailler selon les normes les plus élevées.",
+        "button": "View More"
+      }
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "title": "Collaborons",
+      "subtitle": "On vous attends en mail.",
+      "whyEmailTitle": "Pourquoi privilégier l'email ?"
+    },
+    "reasons": {
+      "conversation": {
+        "title": "Conversation naturelle",
+        "description": "L'email permet un échange fluide et détaillé pour mieux comprendre vos besoins spécifiques."
+      },
+      "documents": {
+        "title": "Partage de documents",
+        "description": "Envoyez directement vos fichiers à traduire pour une estimation précise et rapide."
+      },
+      "response": {
+        "title": "Réponse sous 24h",
+        "description": "Nous nous engageons à vous répondre rapidement avec un devis personnalisé."
+      },
+      "confidentiality": {
+        "title": "Confidentialité",
+        "description": "Vos échanges et documents restent privés et sécurisés tout au long du processus."
+      }
+    },
+    "info": {
+      "email": "Email",
+      "phone": "Téléphone"
+    },
+    "cta": {
+      "title": "Dites",
+      "titleHighlight": " bonjour",
+      "subtitle": "On vous attends en mail.",
+      "button": "Nous contacter"
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "title": "Nos ",
+      "titleHighlight": "Services",
+      "description1": "EB Services accompagne les entreprises de tous horizons avec des prestations personnalisées en anglais, allemand, italien et français (autres langues sur demande).",
+      "description2": "Des traductions fidèles à vos besoins, livrées dans les délais et en toute confidentialité."
+    },
+    "features": {
+      "expertise": {
+        "title": "Expertise sectorielle",
+        "description": "Des traductions précises et adaptées à votre domaine d'activité : industrie, santé, énergie, environnement, etc."
+      },
+      "languages": {
+        "title": "Langues proposées",
+        "description": "Français, anglais, allemand (autres langues sur demande) pour élargir votre audience internationale."
+      },
+      "deadlines": {
+        "title": "Respect des délais",
+        "description": "Des délais maîtrisés et un suivi personnalisé pour chaque projet, sans compromis sur la qualité."
+      },
+      "confidentiality": {
+        "title": "Confidentialité garantie",
+        "description": "Sécurité et discrétion assurées pour tous vos documents, de la prise en charge à la livraison."
+      }
+    },
+    "offerings": {
+      "medical": {
+        "title": "Traduction médicale & santé",
+        "description": "Faites traduire vos documents médicaux, rapports, notices et dossiers santé par un professionnel qui garantit la précision terminologique, la confidentialité et l'adaptation aux normes du secteur.",
+        "button": "Demander un devis santé"
+      },
+      "technical": {
+        "title": "Traduction technique & industrielle",
+        "description": "Des traductions techniques sur mesure pour la métallurgie, l'Oil & Gas, la fabrication de machines industrielles et l'énergie, réalisées dans le respect des exigences sectorielles et de la rigueur technique.",
+        "button": "Traduire mes documents industriels"
+      },
+      "transport": {
+        "title": "Traduction transport & logistique",
+        "description": "Confiez la traduction de vos supports techniques, fiches produits et manuels liés à l'aéronautique, l'automobile ou le ferroviaire à un expert attentif aux enjeux métiers de la mobilité.",
+        "button": "Démarrer mon projet transport"
+      },
+      "environment": {
+        "title": "Traduction environnement & développement durable",
+        "description": "Traduction professionnelle pour vos projets en gestion des déchets, économie circulaire, ou développement durable, avec une approche respectueuse des valeurs et des normes environnementales.",
+        "button": "Valoriser vos initiatives vertes"
+      },
+      "marketing": {
+        "title": "Traduction marketing & industries créatives",
+        "description": "Boostez l'impact de vos campagnes marketing, créations audiovisuelles ou contenus digitaux grâce à des traductions sensibles aux codes culturels, adaptées à votre public cible.",
+        "button": "Dynamiser mon marketing international"
+      }
+    },
+    "stats": {
+      "happyClients": "Happy Clients",
+      "completedProjects": "Completed Projects",
+      "clients": "Clients",
+      "wordsTranslated": "Mots Traduits"
+    },
+    "projects": {
+      "title": "Nos derniers projets",
+      "technical": {
+        "title": "Traduction Technique Industrielle",
+        "description": "Notices d'utilisation, fiches techniques et documentation industrielle traduites avec rigueur. Respect absolu de la terminologie sectorielle."
+      },
+      "patents": {
+        "title": "Traduction de Brevets",
+        "description": "Traduction de brevets et documents juridico-techniques. Confidentialité garantie. Expertise en propriété intellectuelle et terminologie juridique."
+      },
+      "localization": {
+        "title": "Localisation Industrielle",
+        "description": "Adaptation culturelle et linguistique de vos contenus. Au-delà de la traduction, je contextualise pour votre marché cible."
+      }
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "subtitle": "Parlons peu traduisons plus",
+      "placeholder": "Enter your email",
+      "button": "SUBSCRIBE"
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "badge": "À Propos",
+      "title": "Votre partenaire de confiance pour des traductions techniques de précision",
+      "description1": "EB Services est un cabinet spécialisé dans la traduction technique et industrielle. Avec une expertise pointue dans les domaines de l'industrie, de la santé, du transport et de l'environnement, nous accompagnons les entreprises dans leur développement international.",
+      "description2": "Notre engagement : des traductions fidèles, précises et adaptées à votre secteur d'activité."
+    },
+    "content": {
+      "title": "Une expertise au service de votre réussite internationale",
+      "description": "EB Services est dirigé par un traducteur technique certifié, fort de plusieurs années d'expérience dans la traduction de documents industriels complexes. Nous maîtrisons les subtilités techniques et terminologiques de chaque secteur pour vous garantir des traductions de la plus haute qualité."
+    },
+    "clients": {
+      "title": "Avec qui travaillons-nous",
+      "description": "EB Services accompagne une clientèle diversifiée, des grandes entreprises internationales aux PME et particuliers, en passant par les acteurs industriels de tous secteurs.",
+      "button": "Nous contacter",
+      "types": {
+        "largeCompanies": "Grandes Entreprises",
+        "sme": "TPE/PME",
+        "individuals": "Particuliers",
+        "industrial": "Industriels"
+      }
+    },
+    "newsletter": {
+      "title": "Restez informé de nos actualités et conseils en traduction",
+      "placeholder": "Entrez votre email",
+      "button": "S'ABONNER"
+    }
+  },
+  "pricingPage": {
+    "hero": {
+      "title": "Nos ",
+      "titleHighlight": "Tarifs",
+      "subtitle": "Des tarifs transparents et adaptés à vos besoins de traduction",
+      "description1": "Chaque projet est unique. Nous établissons des devis personnalisés",
+      "description2": "en fonction de vos spécifications et de vos délais."
+    },
+    "process": {
+      "title": "Comment nous procédons",
+      "subtitle": "Un processus simple et transparent pour obtenir vos traductions professionnelles",
+      "steps": {
+        "analysis": {
+          "step": "01",
+          "title": "Analyse de votre demande",
+          "description": "Envoyez-nous vos documents et précisez vos besoins. Nous analysons le volume, la complexité et les délais souhaités."
+        },
+        "quote": {
+          "step": "02",
+          "title": "Devis personnalisé sous 24h",
+          "description": "Recevez un devis détaillé avec tarifs transparents, délais de livraison et modalités de paiement."
+        },
+        "translation": {
+          "step": "03",
+          "title": "Traduction et révision",
+          "description": "Nos experts linguistiques traduisent vos documents avec précision, puis relisent et corrigent chaque texte."
+        },
+        "delivery": {
+          "step": "04",
+          "title": "Livraison et suivi",
+          "description": "Réception de vos traductions finalisées dans les délais convenus, avec possibilité de révisions mineures."
+        }
+      }
+    },
+    "factors": {
+      "title": "Facteurs influençant nos tarifs",
+      "subtitle": "Plusieurs éléments sont pris en compte pour établir votre devis personnalisé",
+      "volume": {
+        "title": "Volume de texte",
+        "description": "Tarification au mot source avec dégressivité pour les gros volumes"
+      },
+      "languages": {
+        "title": "Combinaison linguistique",
+        "description": "Tarifs variables selon les langues source et cible"
+      },
+      "specialization": {
+        "title": "Spécialisation technique",
+        "description": "Supplément pour les domaines très spécialisés"
+      },
+      "deadline": {
+        "title": "Délais de livraison",
+        "description": "Supplément express pour les projets urgents"
+      },
+      "format": {
+        "title": "Format de fichier",
+        "description": "Supplément pour les formats complexes nécessitant une mise en forme"
+      },
+      "services": {
+        "title": "Services additionnels",
+        "description": "Relecture, révision, mise en page selon vos besoins"
+      }
+    },
+    "cta": {
+      "title": "Prêt à obtenir votre devis personnalisé ?",
+      "subtitle": "Envoyez-nous vos documents et recevez une estimation sous 24h",
+      "button": "Demander un devis gratuit"
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "subtitle": "Trouvez les réponses aux questions les plus courantes sur nos tarifs et services",
+      "items": {
+        "pricing": {
+          "question": "Comment calculez-vous vos tarifs de traduction ?",
+          "answer": "Nos tarifs sont calculés au mot source, avec des prix variables selon la combinaison linguistique, la spécialisation technique et les délais. Nous proposons des tarifs dégressifs pour les gros volumes et des tarifs préférentiels pour nos clients réguliers."
+        },
+        "deadline": {
+          "question": "Quels sont vos délais de livraison ?",
+          "answer": "Les délais dépendent du volume et de la complexité du projet. En moyenne, nous traduisons 2000 à 3000 mots par jour. Pour les projets urgents, nous proposons un service express avec supplément tarifaire."
+        },
+        "revisions": {
+          "question": "Proposez-vous des révisions après livraison ?",
+          "answer": "Oui, nous offrons des révisions mineures gratuites dans les 7 jours suivant la livraison. Pour des modifications importantes ou des changements de brief, un devis complémentaire sera établi."
+        },
+        "translators": {
+          "question": "Travaillez-vous avec des traducteurs natifs ?",
+          "answer": "Absolument. Tous nos traducteurs sont des locuteurs natifs de la langue cible et spécialisés dans leur domaine d'expertise. Cela garantit la qualité linguistique et culturelle de nos traductions."
+        },
+        "confidentiality": {
+          "question": "Comment garantissez-vous la confidentialité ?",
+          "answer": "Nous signons des accords de confidentialité (NDA) pour tous nos projets. Vos documents sont stockés de manière sécurisée et supprimés après archivage selon nos conditions générales."
+        },
+        "formats": {
+          "question": "Acceptez-vous tous types de formats de fichiers ?",
+          "answer": "Nous travaillons avec la plupart des formats : Word, PDF, Excel, PowerPoint, InDesign, HTML, XML, etc. Pour les formats spéciaux, nous vous confirmons la faisabilité lors de l'analyse de votre demande."
+        },
+        "proofreading": {
+          "question": "Proposez-vous des services de relecture uniquement ?",
+          "answer": "Oui, nous proposons des services de relecture et révision pour des textes déjà traduits. Ce service est facturé à un tarif réduit par rapport à une traduction complète."
+        },
+        "payment": {
+          "question": "Comment se déroule le paiement ?",
+          "answer": "Pour les nouveaux clients, nous demandons un acompte de 50% à la commande. Le solde est payable à la livraison. Nos clients réguliers bénéficient de conditions de paiement à 30 jours."
+        }
+      }
+    }
+  },
+  "blogPage": {
+    "hero": {
+      "title": "IA et ",
+      "titleHighlight": "Traduction",
+      "subtitle": "Une collaboration essentielle pour l'avenir de la traduction professionnelle",
+      "publishInfo": "Publié le 15 janvier 2025 • 8 min de lecture"
+    },
+    "intro": {
+      "lead": "La traduction est bien plus qu'un simple passage d'une langue à une autre : elle est le socle des échanges culturels et économiques. Longtemps réservée à des experts linguistiques, elle est aujourd'hui bouleversée par l'essor de l'intelligence artificielle (IA).",
+      "paragraph1": "En quelques années seulement, les outils de traduction automatiques se sont imposés comme des alliés incontournables. Rapides, puissants et de plus en plus précis, ils modifient en profondeur la manière dont les traducteurs travaillent. Mais jusqu'où l'IA peut-elle aller ? Peut-elle vraiment remplacer l'humain ?",
+      "paragraph2": "Dans cet article, nous explorons le rôle de l'IA dans la traduction, ses avantages, ses limites et l'avenir de la collaboration homme-machine."
+    },
+    "aiRole": {
+      "title": "Le rôle de l'IA dans la traduction",
+      "paragraph1": "Les systèmes de traduction automatique basés sur l'IA analysent le texte source et le traduisent instantanément dans la langue cible. Grâce à des algorithmes avancés, ils conservent la syntaxe, la grammaire et le sens global du texte.",
+      "highlightSuccess": "➡️ Leur principal atout ? La rapidité : un volume de contenu massif peut être traduit en quelques secondes.",
+      "highlightWarning": "⚠️ Mais l'IA n'est pas infaillible. Certaines erreurs, maladresses ou contresens apparaissent encore, rendant indispensable l'intervention d'un traducteur humain pour la révision et l'adaptation culturelle."
+    },
+    "collaboration": {
+      "title": "IA et traducteurs : une collaboration incontournable",
+      "paragraph1": "Pour les professionnels de la traduction, l'IA n'est pas une menace mais un outil complémentaire. Le processus repose généralement sur deux étapes :",
+      "step1": "Traduction automatique grâce à un outil d'IA.",
+      "step2": "Révision humaine par un traducteur natif, qui affine le texte, corrige les incohérences et restitue la dimension culturelle et stylistique.",
+      "highlightInfo": "👉 Résultat : des traductions plus rapides, plus précises, mais toujours enrichies de la sensibilité humaine."
+    },
+    "advantages": {
+      "title": "Les avantages de la traduction avec l'IA",
+      "paragraph1": "L'intelligence artificielle transforme le métier de traducteur et les attentes des entreprises :",
+      "benefit1": "Un gain de temps considérable : traitement de gros volumes en quelques minutes.",
+      "benefit2": "Des coûts réduits : moins de ressources humaines nécessaires qu'avec une traduction manuelle.",
+      "benefit3": "Un atout pour les spécialisations (juridique, médical, technique, littéraire) grâce aux mémoires de traduction et aux bases terminologiques.",
+      "benefit4": "Une productivité accrue pour les traducteurs, qui disposent d'outils performants pour rechercher, harmoniser et automatiser certaines tâches."
+    },
+    "limitations": {
+      "title": "Les limites de l'IA en traduction",
+      "paragraph1": "Malgré ses performances, l'IA reste confrontée à des défis majeurs :",
+      "limit1": "Contexte mal interprété : certaines phrases perdent leur subtilité.",
+      "limit2": "Nuances culturelles mal traduites : proverbes, jeux de mots, idiomatismes échappent aux algorithmes.",
+      "limit3": "Manque de fluidité : les textes peuvent paraître mécaniques ou artificiels.",
+      "paragraph2": "En somme, l'IA ne peut pas encore reproduire la créativité, la sensibilité et l'intuition humaines."
+    },
+    "future": {
+      "title": "L'avenir : une alliance entre technologie et expertise humaine",
+      "paragraph1": "Plutôt que d'opposer l'IA et les traducteurs, il faut penser en termes de collaboration.",
+      "aiLabel": "L'IA",
+      "aiDescription": "Automatise et accélère",
+      "humanLabel": "L'humain",
+      "humanDescription": "Nuance et contextualise",
+      "paragraph2": "Cette complémentarité ouvre la voie à une nouvelle ère : des traductions plus rapides, précises et adaptées aux besoins spécifiques des clients.",
+      "paragraph3": "Les traducteurs de demain devront s'adapter en :",
+      "adaptation1": "maîtrisant les outils technologiques,",
+      "adaptation2": "se spécialisant dans des niches à forte valeur ajoutée,",
+      "adaptation3": "et en continuant à offrir ce que l'IA ne peut pas remplacer : l'empreinte culturelle et la touche humaine."
+    },
+    "conclusion": {
+      "title": "Conclusion",
+      "paragraph1": "L'intelligence artificielle ne remplace pas les traducteurs, elle transforme leur métier. Elle leur permet de gagner en efficacité tout en mettant en valeur ce qui les rend irremplaçables : leur sensibilité, leur culture et leur expertise.",
+      "highlight": "👉 En somme, l'avenir de la traduction repose sur une alliance stratégique entre l'innovation technologique et les compétences humaines."
+    },
+    "cta": {
+      "title": "Besoin d'une traduction professionnelle ?",
+      "description": "Découvrez comment nous combinons IA et expertise humaine pour vos projets de traduction.",
+      "button": "Demander un devis"
+    }
+  }
+}

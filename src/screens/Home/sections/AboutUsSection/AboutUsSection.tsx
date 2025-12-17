@@ -1,7 +1,7 @@
 import React from "react";
 import { Separator } from "../../../../components/ui/separator";
 
-const navigationLinks = ["Lorem", "Portfolio", "Careers", "Contact us"];
+const navigationLinks = ["Accueil", "Services", "Expertise", "Contact"];
 
 export const AboutUsSection = (): JSX.Element => {
   return (
@@ -10,11 +10,12 @@ export const AboutUsSection = (): JSX.Element => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-1">
             <p className="text-gray-600 text-base font-normal leading-relaxed mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+              EB Services - Traduction technique et industrielle de haute précision.
+              Expert indépendant certifié, spécialisé dans les notices techniques,
+              brevets et documentation industrielle. FR · EN · DE · IT
             </p>
             <p className="text-gray-600 text-base font-normal leading-relaxed">
-              @Lorem
+              @EBServices
             </p>
           </div>
 
@@ -39,11 +40,11 @@ export const AboutUsSection = (): JSX.Element => {
               Contact us
             </h3>
             <p className="text-gray-600 text-base font-normal leading-relaxed mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+              Besoin d'un devis ou d'informations sur nos services de traduction ?
+              Contactez-nous pour un accompagnement personnalisé.
             </p>
             <p className="text-gray-600 text-base font-normal leading-relaxed">
-              +908 89097 890
+              contact@ebservices.com
             </p>
           </div>
 
@@ -51,7 +52,7 @@ export const AboutUsSection = (): JSX.Element => {
             <img
               className="w-52 h-16 object-contain"
               alt="Group"
-              src="/group-12.png"
+              src="/logos/group-12.png"
             />
           </div>
         </div>
@@ -60,7 +61,7 @@ export const AboutUsSection = (): JSX.Element => {
 
         <div className="text-center">
           <p className="font-normal text-gray-500 text-sm leading-relaxed">
-            Copyright ® 2021 Lorem All rights Rcerved
+            Copyright © 2025 EB Services - Tous droits réservés
           </p>
         </div>
       </div>

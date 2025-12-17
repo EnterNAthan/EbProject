@@ -1,27 +1,29 @@
 import React from "react";
 import { Avatar, AvatarFallback } from "../../../../components/ui/avatar";
 import { Card, CardContent } from "../../../../components/ui/card";
+import { useLanguage } from "../../../../contexts/LanguageContext";
 
 export const TestimonialsSection = (): JSX.Element => {
+  const { t } = useLanguage();
+
   const testimonialData = {
     avatar: {
       bgColor: "bg-[#9207d3]",
-      iconSrc: "/happy-1.svg",
+      iconSrc: "/icons/quality-check.svg",
     },
     user: {
-      name: "Lorem Ipsum is simply dummy text",
-      subtitle: "Lorem Ipsum is simply dummy text",
+      name: t("home.testimonials.user.name"),
+      subtitle: t("home.testimonials.user.title"),
     },
     heading: {
       parts: [
-        { text: "Relecture ", color: "text-black" },
-        { text: "finale", color: "text-[#1090cb]" },
-        { text: " et gestion de ", color: "text-black" },
-        { text: "projet ", color: "text-[#1090cb]" },
+        { text: t("home.testimonials.heading1"), color: "text-black" },
+        { text: t("home.testimonials.heading2"), color: "text-[#1090cb]" },
+        { text: t("home.testimonials.heading3"), color: "text-black" },
+        { text: t("home.testimonials.heading4"), color: "text-[#1090cb]" },
       ],
     },
-    description:
-      "Chaque traduction est soigneusement relue et corrigée.\nContrôle final pour garantir l'exactitude et la qualité.\nValidation complète avant la livraison.\nDocuments transmis dans le respect des délais convenus.\nFacturation transparente et archivage sécurisé de vos projets.",
+    description: t("home.testimonials.description"),
   };
 
   return (
@@ -33,12 +35,12 @@ export const TestimonialsSection = (): JSX.Element => {
               <div className="relative">
                 <Avatar className="w-[58px] h-[58px]">
                   <AvatarFallback
-                    className={`${testimonialData.avatar.bgColor} rounded-full`}
+                    className={`${testimonialData.avatar.bgColor} rounded-full flex items-center justify-center`}
                   />
                 </Avatar>
                 <img
-                  className="absolute w-[26px] h-[26px] top-4 left-4"
-                  alt="Happy"
+                  className="absolute w-[26px] h-[26px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                  alt="Contrôle qualité"
                   src={testimonialData.avatar.iconSrc}
                 />
               </div>
