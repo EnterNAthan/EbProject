@@ -80,7 +80,7 @@ export const Services = (): JSX.Element => {
       contactType: "marketing"
     }
   ];
-
+// ajout d'un commentaire
   const stats = [
     { number: "6", labelKey: "servicesPage.stats.happyClients" },
     { number: "11", labelKey: "servicesPage.stats.completedProjects" },
