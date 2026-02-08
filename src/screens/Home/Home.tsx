@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 import { Layout } from "../../components/Layout";
@@ -12,6 +13,7 @@ import { useLanguage } from "../../contexts/LanguageContext";
 
 export const Home = (): JSX.Element => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
 
   const featureCards = [
     {
@@ -146,7 +148,10 @@ export const Home = (): JSX.Element => {
             <div className="order-2 lg:order-1">
               <TranslationServicesSection />
               <div className="mt-8">
-                <Button className="bg-[#1090cb] hover:bg-[#0e7ba8] text-white px-8 py-3 rounded-lg text-base font-normal">
+                <Button
+                  className="bg-[#1090cb] hover:bg-[#0e7ba8] text-white px-8 py-3 rounded-lg text-base font-normal"
+                  onClick={() => navigate("/services")}
+                >
                   {t("home.translation.button")}
                 </Button>
               </div>
@@ -177,7 +182,10 @@ export const Home = (): JSX.Element => {
             <div>
               <QualityAssuranceSection />
               <div className="mt-8">
-                <Button className="bg-[#1090cb] hover:bg-[#0e7ba8] text-white px-8 py-3 rounded-lg text-base font-normal">
+                <Button
+                  className="bg-[#1090cb] hover:bg-[#0e7ba8] text-white px-8 py-3 rounded-lg text-base font-normal"
+                  onClick={() => navigate("/about")}
+                >
                   {t("home.quality.button")}
                 </Button>
               </div>
@@ -194,7 +202,10 @@ export const Home = (): JSX.Element => {
             <div className="order-2 lg:order-1">
               <TestimonialsSection />
               <div className="mt-8">
-                <Button className="bg-[#1090cb] hover:bg-[#0e7ba8] text-white px-8 py-3 rounded-lg text-base font-normal">
+                <Button
+                  className="bg-[#1090cb] hover:bg-[#0e7ba8] text-white px-8 py-3 rounded-lg text-base font-normal"
+                  onClick={() => navigate("/contact")}
+                >
                   {t("home.testimonials.button")}
                 </Button>
               </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Separator } from "../ui/separator";
 import { useLanguage } from "../../contexts/LanguageContext";
 
@@ -47,13 +48,13 @@ export const Footer = (): JSX.Element => {
                 </h3>
                 <nav className="space-y-2">
                   {navigationLinks.map((link, index) => (
-                    <a
+                    <Link
                       key={index}
-                      href={link.href}
+                      to={link.href}
                       className="block font-normal text-gray-600 text-base leading-relaxed hover:text-[#1090cb] cursor-pointer transition-colors duration-200"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   ))}
                 </nav>
               </div>

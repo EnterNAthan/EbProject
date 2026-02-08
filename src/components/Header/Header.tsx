@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 import { LanguageSelector } from "../LanguageSelector";
 import { useLanguage } from "../../contexts/LanguageContext";
@@ -27,7 +28,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPath = "/" }) => {
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <a href="/" className="block">
+          <Link to="/" className="block">
             <div className="w-[142px] h-[136px] relative">
               <div className="absolute w-24 h-24 top-4 left-4 bg-[#1090cb]" />
             <img
@@ -36,15 +37,15 @@ export const Header: React.FC<HeaderProps> = ({ currentPath = "/" }) => {
               src="/illustrations/chatgpt-image-12-juin-2025--23-04-46-removebg-preview-1-1.png"
             />
             </div>
-          </a>
+          </Link>
         </div>
 
         {/* Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           {navigationItems.map((item, index) => (
-            <a
+            <Link
               key={index}
-              href={item.href}
+              to={item.href}
               className={`transition-colors duration-200 font-normal text-base ${
                 item.href === currentPath
                   ? "text-[#1090cb] font-medium"
@@ -52,7 +53,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPath = "/" }) => {
               }`}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 

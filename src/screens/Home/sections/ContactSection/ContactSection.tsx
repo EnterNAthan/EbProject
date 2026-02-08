@@ -1,10 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
 import { useLanguage } from "../../../../contexts/LanguageContext";
 
 export const ContactSection = (): JSX.Element => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
 
   const cardData = [
     {
@@ -50,6 +52,7 @@ export const ContactSection = (): JSX.Element => {
               <div className="flex justify-center mt-8">
                 <Button
                   className={`${card.buttonBg} ${card.buttonText} rounded-lg font-medium text-base px-8 py-3 hover:opacity-90 transition-opacity duration-200`}
+                  onClick={() => navigate("/contact")}
                 >
                   {card.buttonLabel}
                 </Button>

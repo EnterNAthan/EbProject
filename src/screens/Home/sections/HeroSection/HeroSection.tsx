@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "../../../../components/ui/button";
 import { useLanguage } from "../../../../contexts/LanguageContext";
 
 export const HeroSection = (): JSX.Element => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
 
   const headingParts = [
     { text: t("home.hero.title1"), color: "text-black" },
@@ -32,11 +34,15 @@ export const HeroSection = (): JSX.Element => {
         <Button
           variant="outline"
           className="bg-white border-2 border-[#1090cb] text-[#1090cb] hover:bg-[#1090cb] hover:text-white px-8 py-3 rounded-lg font-medium text-base transition-colors duration-200"
+          onClick={() => navigate("/services")}
         >
           {t("home.hero.discover")}
         </Button>
 
-        <Button className="bg-[#1090cb] hover:bg-[#0e7ba8] text-white px-8 py-3 rounded-lg font-normal text-base transition-colors duration-200">
+        <Button
+          className="bg-[#1090cb] hover:bg-[#0e7ba8] text-white px-8 py-3 rounded-lg font-normal text-base transition-colors duration-200"
+          onClick={() => navigate("/contact")}
+        >
           {t("home.hero.contactMe")}
         </Button>
       </div>
